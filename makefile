@@ -15,7 +15,7 @@ SRC = chip
 BIN = bin
 EXEC = $(SRC)
 
-$(EXEC): $(SRC)/*.c
+$(EXEC): $(shell find $(SRC) -name '*.c')
 ifeq ($(TARGET), debug)
 	@printf "\033[33mBuilding [ DEBUG MODE ] ...\033[m\n"
 else

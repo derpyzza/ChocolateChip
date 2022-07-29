@@ -1,10 +1,11 @@
+#include "core.h"
+#include "tui/tui.h"
 #include <stdio.h>
 
 int
 main(void)
 {
-#ifdef DEBUG
-	printf("debug mode\n");
-#endif
-	printf("bleh\n");
+	printf("this is the main file\n");
+	CORE_maskTest();
+	TUI_test();
 }
