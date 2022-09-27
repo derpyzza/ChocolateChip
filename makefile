@@ -1,4 +1,4 @@
-CC = gcc
+CC = clang
 TARGET = debug
 
 ifeq ($(TARGET), debug)
